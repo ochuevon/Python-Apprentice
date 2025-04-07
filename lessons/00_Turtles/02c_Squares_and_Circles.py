@@ -25,9 +25,12 @@ tina.penup()                            # Lift the pen up so we can move tina wi
 tina.goto(-100, 100)                    # Move tina to the starting position
 tina.pendown()                          # Put the pen down so we can draw
 
-##
-## Draw a Square
-##
+tina.penup()
+tina.pendown()
+tina.color('blue')
+tina.begin_fill()
+
+
 
 
 tina.pencolor('blue')                   # Set the pen color to blue
@@ -45,10 +48,7 @@ tina.right(90)
 tina.pencolor('purple')                 # Set the pen color to purple
 tina.forward(200)
 tina.right(90)
-
-##
-## Draw a Circle
-##
+tina.end_fill()
 
 tina.penup()     
 tina.goto(0, -75)
@@ -71,6 +71,7 @@ tina.left(90)                           # Turn tina left by 90 degrees
 tina.forward(20)                        # Move tina forward by 20
 tina.write("Why, hello there!")         # Write the message "Why, hello there!"
 tina.backward(20)                       # Move tina backward by 20
+
 
 
 
