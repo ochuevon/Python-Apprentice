@@ -8,4 +8,18 @@ write a new program that uses a loop to draw a pentagon.
 
 """
 
-... # Your code here
+import turtle
+turtle.setup(width=600, height=600)
+
+tina = turtle.Turtle()
+
+tina.shape('turtle')
+tina.speed(3)
+for i in range(8): 
+    tina.forward(120)
+    tina.left(45)
+
+
+
+
+turtle.exitonclick()
