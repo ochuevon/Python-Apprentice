@@ -11,6 +11,7 @@ Write your own turtle program! Here is what your program should do
 
 import turtle as turtle
 
+
 def set_turtle_image(turtle, image_name):
     """Set the turtle's shape to a custom image."""
 
@@ -23,14 +24,14 @@ def set_turtle_image(turtle, image_name):
     turtle.shape(image_path)
 set_turtle_image(turtle, "leaguebot_bolt.gif" )
 
+turtle.shapesize
+
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor('white')
 
-tina = turtle.Turtle()
-
-(width=10,height=10)
-
+tina = turtle.Turtle() 
+tina.shapesize(10,10)
 tina.pencolor('blue')
 
 tina.speed(3)

@@ -9,5 +9,41 @@ Hint: See 08a_More Turtle Programs, section 'Change the Background Image' and
 'Change the Turtle Shape'
 """
 
-... # Your code here
+import turtle as turtle 
 
+def set_turtleimage(turtle, sanic_64):
+    """Set the turtles shape into a custom image."""
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / sanic_64)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
+
+screen = turtle.Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor('white')
+t = turtle.Turtle()
+set_turtleimage(t, "pikachu.gif")
+
+mustache=turtle.Turtle()
+set_turtleimage(mustache, "moustache1.gif")
+"Set the turtles shape into a custom image"
+
+from pathlib import Path
+image_dir = Path(__file__).parent / "images"
+image_path = str(image_dir / "moustache1.gif")
+screen = turtle.getscreen()
+screen.addshape(image_path)
+
+
+screen = turtle.Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor('white')
+t = turtle.Turtle()
+
+
+mustache.goto(0,-50)
+
+turtle.exitonclick()
