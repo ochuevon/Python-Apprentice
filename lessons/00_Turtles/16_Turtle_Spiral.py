@@ -8,7 +8,7 @@ This program already works. See if you can change it to make it draw a different
 import random
 import turtle
 
-
+turtle.setup(width=600,height=600)
 # Returns a random color!
 def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))

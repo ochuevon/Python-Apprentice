@@ -13,7 +13,7 @@ def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
 
 
-colors = ["red", "blue", "green", "yellow", "orange"]
+colors = ["red", "blue", "green", "yellow", "orange", "black", "pink"]
 
 
 def getNextColor(i):
@@ -22,14 +22,14 @@ def getNextColor(i):
 turtle.setup (width=600, height=600) 
 window = turtle.Screen()
 
-baseSize = 200  # the size of the black part of the star
+baseSize = 130  # the size of the black part of the star
 flameSize = 130  # the length of the flaming arms
 
 t = turtle.Turtle() 
 
 t.shape("turtle") 
 
-t.width(2) 
+t.width(5) 
 
 t.speed(0) 
 
