@@ -8,18 +8,21 @@ at the comments and the code snippets in the previous lessons, like
 
 
 """
+import tkinter as tk
+from tkinter import simpledialog, messagebox
 
-# Import the required modules
+window = tk.Tk()
 
-# Create a window object
+window.withdraw()
 
-# Hide the window, hint: use the withdraw method
+num1 = simpledialog.askfloat("Input", "Enter the first number:")
 
-# Ask the user for the first number   
+num2 = simpledialog.askfloat("Input", "Enter the second number:")
 
-# Ask the user for the second number
+if num1 is not None and num2 is not None:
+    total = num1 + num2
+    messagebox.showinfo("Result", f"The sum of the two numbers is: {total}")
+else:
+    messagebox.showwarning("Cancelled", "One or both numbers were not entered.")
 
-# Display the sum of the two numbers 
-
-# Keep the window open
-
+window.mainloop()
