@@ -31,10 +31,30 @@ from guizero import App, Box, Text
 
 app = App("Numbers Grid", layout="grid")
 
-for i in range(10):
-    for j in range(11):
-        print(f"({i},{j})", end= ' ')
-    print()
+for i in range( 1, 101):
+    row = (i - 1) // 10
+    col = (i - 1) % 10
+
+if i % 15 == 0:
+    display = '🐍'
+    color = 'black'
+elif i % 5 == 0:
+     display = '🦡'
+     color = 'black'
+elif i % 3 == 0:
+    display = '🍄'
+    color = 'black'
+
+else:
+    display = str(i)
+    digit_sum = sum(int(d) for d in str(i))
+    if digit_sum % 2 == 0:
+        color = 'blue'
+    else:
+        color = 'red'
+
+Text(app, text = display, grid=[col, row], color = color)
+
 # Or you can use a single loop and calculate the row and column
 
 # In the loop, calculate or increment the number
