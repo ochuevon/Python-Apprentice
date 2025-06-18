@@ -39,10 +39,15 @@ def ask_integer(prompt):
             return int(input(prompt))
         except ValueError:
             print("Please enter a valid number!")
-n = random.randint(1, 100)
-while n % 7 == 0:
+
+            
+def get_valid_random_number():
+    n = random.randint(1, 100)
+    while n % 7 == 0:
         n = random.randint(1, 100)
-    
+    return n 
+
+       
 number_to_guess = get_valid_random_number()
 
 while True:
@@ -62,6 +67,11 @@ while True:
     else:
         print("Correct! You guessed the number.")
         break
+
+
+
+
+
 
 # In your loop:
 
