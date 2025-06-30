@@ -33,7 +33,7 @@ at the bottom of the editor screen; this program does not use the GUI.
 import random
 
 def ask_integer(prompt):
-    """Function to ask the user for an integer"""
+    
     while True:
         try:
             return int(input(prompt))
