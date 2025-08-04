@@ -3,7 +3,7 @@
 {
 	"name": "Python 3",
 
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+	"image": "image": "mcr.microsoft.com/devcontainers/universal:2",
 
 
 	//"build": {
@@ -18,7 +18,7 @@
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/desktop-lite:1.2.7": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
 			"password" : "code4life"
 		}
 	},
