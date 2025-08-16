@@ -25,6 +25,7 @@ an error message will be displayed and new definitions will not be added.
 
 
 def add_definition(db, key, value):
+
     """
     Add a new definition to the database.
 
@@ -64,6 +65,8 @@ def delete_definition(db, key):
 
 
 def is_funny(definition):
+    
+
     """
     Check if the definition is funny, which means it contains one of the words:
 
