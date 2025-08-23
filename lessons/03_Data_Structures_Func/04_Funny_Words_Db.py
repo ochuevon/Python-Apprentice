@@ -25,6 +25,13 @@ an error message will be displayed and new definitions will not be added.
 
 
 def add_definition(db, key, value):
+    while True:
+        definition = input("Add a definiton")
+        if definition > 5:
+            print("Error you cant have more than 5 definitions")
+            return
+
+    
 
     """
     Add a new definition to the database.
@@ -48,6 +55,10 @@ def add_definition(db, key, value):
 
 
 def delete_definition(db, key):
+    if key in db:
+        del db(key)
+
+        
     """
     Deletes the definition associated with the given key from the database.
 
@@ -65,9 +76,18 @@ def delete_definition(db, key):
 
 
 def is_funny(definition):
+    funny_words = ['fun', 'funny', 'hilarious', 'amusing', 'spleen']
+    if definition == "fun" or definition == "funny" or definition == "hilarious" or definition == "amusing" or definition == "spleen":
+        return True
+    else:
+        return False 
+         
+
+
+
     
 
-    """
+    """]
     Check if the definition is funny, which means it contains one of the words:
 
         'fun', 'funny', 'hilarious', 'amusing', 'pants', 'spleen'
@@ -84,6 +104,10 @@ def is_funny(definition):
     return False
 
 def update_listbox(db):
+    db = ['fun', 'funny', 'hilarious', 'amusing', 'spleen']
+    return db
+    
+
     """
     Update the listbox with the current definitions in the database.1
 
