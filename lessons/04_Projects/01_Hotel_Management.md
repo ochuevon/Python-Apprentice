@@ -1,4 +1,4 @@
-# Hotel Management
+
 
 The purpose of this program is to make sure you have an understanding of the
 topics you learned in Python Apprentice.  This is going to be your 1st program
@@ -18,6 +18,24 @@ management program.
 
 
 ## Requirements:
+
+
+def main():
+  while True:
+  print(Hello Welcome to the Breno Hotel")
+  print("1. What room do you want")
+  print("2. Leave the Breno Hotel")
+
+  choice = input("Choose an option")
+
+if choice = ("1. What room do you want"):
+    print("Choose a room Normal or suite")
+elif choice = ("2. Leave the Breno Hotel")
+break
+
+
+  
+
 * Should run in 1 While Loop
 * Nearly all functionality should be in functions which are called from a
   `main()` function.
@@ -44,6 +62,8 @@ management program.
 
 
 Have Fun!!!
+
+
 
 
 
